@@ -171,7 +171,7 @@ async def parse_html_search(html: str) -> List[Dict]:
             'id': business_number,
             'name': cols[1].get_text(strip=True),
             'status': cols[2].get_text(strip=True),
-            'link': business_number,
+            'url': business_number,
         })
     return results
 
